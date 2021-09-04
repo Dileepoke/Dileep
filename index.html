@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Upload images to telegra.ph">
+    <meta property="og:image" content="https://telegra.ph/images/logo.png">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.1.0/dist/darkly/bootstrap.min.css">
+
+    <title>Upload images to telegra.ph</title>
+    <style>
+.clippy {
+    margin-top: -3px;
+    position: relative;
+    top: 3px;
+}
+</style>
+   <link rel="shortcut icon" href="https://img-upload.w3spaces.com/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" href="//telegra.ph/images/favicon.png?1" sizes="16x16">
+    <link rel="icon" type="image/png" href="//telegra.ph/images/favicon_2x.png?1" sizes="32x32">
+  </head>
+  <body>
+    <center><h2>Upload image to <a style="text-decoration: none;" href="//telegra.ph">telegra.ph </a><hr/></h2></center>
+        <br/>
+      <div class="card border-secondary col-md-6 mx-auto" style="max-width: 100%;">
+           <div class="card-header">
+    Upload to <a href="https://telegra.ph/upload"> telegra.ph </a>
+  </div>
+  <div class="card-body">
+    <details open>
+  <summary>IMP Thing</summary>
+  <p> Allowed only .jpg, .jpeg, .png, .gif and .mp4 file extensions that to ≤4.9MB will only upload file to <a style="text-decoration: none;" href="//telegra.ph/upload">Telegra.ph</a>'s servers.</p>
+</details>
+        <div class="container">
+            <form method="post" action="https://telegra.ph/upload" enctype="multipart/form-data" target="_blank">
+                <label for="select-file">Select Image(<5M):</label>
+                 <input class="form-control" name="TheKVT" type="file" id="formFile">
+               <div class="col-auto"><br/>
+                               <button type="submit" class="btn btn-primary">Submit</button>
+               </div>
+            </form>
+	    </div>
+      </div>
+      </div>
+        <hr/> 
+        <div >
+         
+ <div class="card border-secondary col-md-6 mx-auto" style="max-width: 100%;">
+           <div class="card-header">
+   Get URL from generated thing
+  </div>
+  <div class="card-body">
+    <div class="alert alert-dismissible alert-info">
+      <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+       <h5 class="alert-heading"><center><b>The url of the image like below  :- </b></center></h5>
+  https://telegra.ph/<strong><u>file</u></strong>/<strong><u>ddc2057be1a9afdaf4c0d.jpg</u></strong> <br/>
+        [{"src":"\/<strong><u>file</u></strong>\/<strong><u>ddc2057be1a9afdaf4c0d.jpg</u></strong>"}]
+</div>
+      <br>
+      <div class="alert alert-secondary">
+  <b>Paste only this</b> :- &nbsp;"ddc2057be1a9afdaf4c0d.jpg" &nbsp;&nbsp; for generated text
+</div>
+    <div class="row mb-3">
+    <label for="floatingInputValue" class="col-sm-2 col-form-label">Paste SRC:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control text-light" id="first_name">
+    </div> </div>
+
+<button type="submit" class="btn btn-primary" id="say">Submit</button></br></br>
+<div class="input-group mb-6">
+  <div class="text-light form-control" id="result"></div>
+  <div class="input-group-append">
+    <button class="cpy btn btn-success " data-clipboard-target="#result"> 
+      Copy</button>
+  </div>
+</div>
+ </div> </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
+<script>new ClipboardJS('.cpy');</script>
+<script>
+function Submit() {
+    var fname = document.getElementById('first_name').value;
+    var html = 'https://telegra.ph/file/'+ fname;
+    document.getElementById('result').innerHTML = html;
+} 
+document.getElementById('say').addEventListener('click', Submit)
+</script>
+
+ <br><br>
+ <center><img class="figure-img img-fluid rounded mx-auto " src="https://telegra.ph/file/ddc2057be1a9afdaf4c0d.jpg" width=80%></center>
+        </div><br/> 
+        
+<footer class="d-flex justify-content-center my-3">
+        <a href="https://github.com/TheKVT"><span class="badge bg-dark badge-left">TheKVT</span><span class="badge  bg-secondary badge-right">&lt;/&gt;</span></a>
+    </footer>  <br/> 
+ 
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  </body>
+</html>
