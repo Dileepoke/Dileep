@@ -77,7 +77,7 @@ function form_submit(){
 
 var video_url ="https://www.youtube.com/embed/"+video_id+"?autoplay=0&modestbranding=1&autohide=1&showinfo=0&origin=https://yt-country.thekvt.tk/&loop=1";document.getElementById("myIframe").src=video_url;
 
-var thumbnail_url = "http://img.youtube.com/vi/'+video_id+'/maxresdefault.jpg"; document.getElementById("thumbnail").href=thumbnail_url;
+var thumbnail_url = "http://img.youtube.com/vi/"+video_id+"/maxresdefault.jpg"; document.getElementById("thumbnail").download=thumbnail_url;
 
 
 	if(video_id){
